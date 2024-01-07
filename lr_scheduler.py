@@ -26,7 +26,7 @@ class CyclicalLearningRateSchedule(tf.keras.optimizers.schedules.LearningRateSch
 
 # debug
 if __name__ == "__main__":
-    temp_learning_rate_schedule = CyclicalLRSchedule(100)
+    temp_learning_rate_schedule = CyclicalLearningRateSchedule(100)
     plt.plot(temp_learning_rate_schedule(tf.range(10000, dtype=tf.float32)))
     plt.ylabel("Learning Rate")
     plt.xlabel("Train Step")
